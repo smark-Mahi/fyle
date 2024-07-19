@@ -10,26 +10,56 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="body">
+    <div class="popup-container" class="hidden">
+      <form action="https://getform.io/f/qalodrmb" method="POST" id="contactForm">
+          <h2>Talk to us <span id="closeFormBtn">x</span></h2>
+          <div class="form-container">
+              <div class="form-group">
+                  <input type="email" id="workEmail" name="workEmail" required>
+                  <label for="workEmail">Work email*</label>
+              </div>
+              <div class="flex mar-2">
+                  <div class="form-group">
+                      <input type="text" id="firstName" name="firstName" required>
+                      <label for="firstName">First name*</label>
+                  </div>
+                  <div class="form-group">
+                      <input type="text" id="lastName" name="lastName" required>
+                      <label for="lastName">Last name*</label>
+                  </div>
+              </div>
+          </div>
+          <div class="checkbox-container mar-2 flex">
+              <input class="col-1" type="checkbox" id="termsCheckbox" name="termsCheckbox" required>
+              <label class="col-2" for="termsCheckbox">I agree to Fyle's terms and conditions, and provide consent to send me communication.</label>
+          </div>
+  
+          <!-- Hidden honeypot field -->
+          <input type="hidden" name="_gotcha" style="display:none !important">
+  
+          <button type="submit">Contact Us</button>
+      </form>
+  </div>
     <div class="container">
       <!-- contact us -->
-      <div class="intro">
-        <div>
-          <div class="content">
-            <h6>AWARD WINNING</h6>
-            <h1>DIGITAL MARKETING AGENCY</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse
-              tempora ius eos nostrum optio iste laboriosam, quisquam ducimus,
-              vel laudantium beatae omnis.
-            </p>
-            <button>contact us</button>
+        <div class="intro">
+          <div>
+            <div class="content">
+              <h6>AWARD WINNING</h6>
+              <h1>DIGITAL MARKETING AGENCY</h1>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse
+                tempora ius eos nostrum optio iste laboriosam, quisquam ducimus,
+                vel laudantium beatae omnis.
+              </p>
+              <button class="show-popup">contact us</button>
+            </div>
+          </div>
+          <div class="imageContainer">
+            <img src="./assets//contact.png" alt="contact us" />
           </div>
         </div>
-        <div class="imageContainer">
-          <img src="./assets//contact.png" alt="contact us" />
-        </div>
-      </div>
       <!-- who we are -->
       <div class="services">
         <h6>WHAT WE DO</h6>
@@ -54,13 +84,13 @@
                   <h3>WEB DEVELOPMENT</h3>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugit accusamus perferendis, 
+                    Fugit accusamus perferendis,
                   </p>
                   <div class="btn">
-                    <a href="https://www.fylehq.com/" target="_blank" 
-                    >Read More </a>
-                    <div><img src="./assets/arrow.svg" alt="arrow" 
-                      /></div>
+                    <a href="https://www.fylehq.com/" target="_blank"
+                      >Read More
+                    </a>
+                    <div><img src="./assets/arrow.svg" alt="arrow" /></div>
                   </div>
                 </div>
               </div>
@@ -73,13 +103,13 @@
                   <h3>WEB DEVELOPMENT</h3>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugit accusamus perferendis, 
+                    Fugit accusamus perferendis,
                   </p>
                   <div class="btn">
-                    <a href="https://www.fylehq.com/" target="_blank" 
-                    >Read More </a>
-                    <div><img src="./assets/arrow.svg" alt="arrow" 
-                      /></div>
+                    <a href="https://www.fylehq.com/" target="_blank"
+                      >Read More
+                    </a>
+                    <div><img src="./assets/arrow.svg" alt="arrow" /></div>
                   </div>
                 </div>
               </div>
@@ -92,13 +122,13 @@
                   <h3>WEB DEVELOPMENT</h3>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugit accusamus perferendis, 
+                    Fugit accusamus perferendis,
                   </p>
                   <div class="btn">
-                    <a href="https://www.fylehq.com/" target="_blank" 
-                    >Read More </a>
-                    <div><img src="./assets/arrow.svg" alt="arrow" 
-                      /></div>
+                    <a href="https://www.fylehq.com/" target="_blank"
+                      >Read More
+                    </a>
+                    <div><img src="./assets/arrow.svg" alt="arrow" /></div>
                   </div>
                 </div>
               </div>
@@ -111,13 +141,13 @@
                   <h3>WEB DEVELOPMENT</h3>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugit accusamus perferendis, 
+                    Fugit accusamus perferendis,
                   </p>
                   <div class="btn">
-                    <a href="https://www.fylehq.com/" target="_blank" 
-                    >Read More </a>
-                    <div><img src="./assets/arrow.svg" alt="arrow" 
-                      /></div>
+                    <a href="https://www.fylehq.com/" target="_blank"
+                      >Read More
+                    </a>
+                    <div><img src="./assets/arrow.svg" alt="arrow" /></div>
                   </div>
                 </div>
               </div>
@@ -130,13 +160,13 @@
                   <h3>WEB DEVELOPMENT</h3>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugit accusamus perferendis, 
+                    Fugit accusamus perferendis,
                   </p>
                   <div class="btn">
-                    <a href="https://www.fylehq.com/" target="_blank" 
-                    >Read More </a>
-                    <div><img src="./assets/arrow.svg" alt="arrow" 
-                      /></div>
+                    <a href="https://www.fylehq.com/" target="_blank"
+                      >Read More
+                    </a>
+                    <div><img src="./assets/arrow.svg" alt="arrow" /></div>
                   </div>
                 </div>
               </div>
@@ -149,13 +179,13 @@
                   <h3>WEB DEVELOPMENT</h3>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Fugit accusamus perferendis, 
+                    Fugit accusamus perferendis,
                   </p>
                   <div class="btn">
-                    <a href="https://www.fylehq.com/" target="_blank" 
-                    >Read More </a>
-                    <div><img src="./assets/arrow.svg" alt="arrow" 
-                      /></div>
+                    <a href="https://www.fylehq.com/" target="_blank"
+                      >Read More
+                    </a>
+                    <div><img src="./assets/arrow.svg" alt="arrow" /></div>
                   </div>
                 </div>
               </div>
@@ -225,24 +255,33 @@
         <h1>WHY WE ARE BEST</h1>
         <div>
           <div class="projectsImageContainer">
-            <img src="./assets/project.png" alt="projects" />
+            <img src="./assets/project.png" alt="projects" id="projectimage" />
           </div>
           <div class="project-info">
-            <div class="ggg">
+            <div
+              class="project-content selected"
+              onclick="changeImage('./assets/project.png',1)"
+            >
               <h3>Genderless Kei - Japan's Hot</h3>
               <p>
                 Set to launch on the manufacturer's new A330neo aircraft in
                 2017, it's offering lots of new A330neo aircraft in.
               </p>
             </div>
-            <div class="ggg">
+            <div
+              class="project-content"
+              onclick="changeImage('./assets/project2.png',2)"
+            >
               <h3>Better Startegy & Quality</h3>
               <p>
                 Set to launch on the manufacturer's new A330neo aircraft in
                 2017, it's offering lots of new A330neo aircraft in.
               </p>
             </div>
-            <div class="ggg">
+            <div
+              class="project-content"
+              onclick="changeImage('./assets/project3.webp',3)"
+            >
               <h3>Genderless Kei - Japan's Hot</h3>
               <p>
                 Set to launch on the manufacturer's new A330neo aircraft in
